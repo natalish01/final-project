@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color:  #2f2f2f;
+    background-color:  #F3F2EC;
+    font-size: 16px;
+    line-height: 2;
+
+}
+.menu-list a {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    padding: 0px 40px;
+}
+
+.menu-list>ul>li>a{
+        padding: 10px 40px;
+}
+.nav li a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: all .3s ease-out;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+header{
+    padding: 40px 0;
+    display: flex;
+    border-bottom: 1px solid #E0E0E0;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+
+.menu-list li a:hover{
+    color: rgba(169, 111, 2, 0.685);
+}
+
+.section1{
+    background-image: url(/img/library.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+#clock h2 {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    padding-top: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.9em;
+  }
+  
+  #clock #time {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  
+  #clock #time div {
+    position: relative;
+    margin: 0px 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  }
+  
+  #clock #time div span {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.83);
+  }
+  
+  #clock #time div span:nth-child(2) {
+    height: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: rgba(255, 166, 0, 0.307);
+    text-transform: uppercase;
+  }
+  
+  #clock #time div:last-child span {
+    background:transparent;
+  }
+  
+  #clock #time div:last-child span:nth-child(2) {
+    background: rgba(255, 166, 0, 0.307);
+  }
+  .best-book{
+    margin: 180px 0;
+    text-align: center;
+  }
+
+  .quote .section-titles.divider, .quote .section-titles.divider:after {
+    margin: 0 auto;
+}
+.divider{
+  font-weight: 500;
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1;
+  position: relative;
+}
+.quote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 180px;
+  
+}
+.quote1 .author-name {
+  font-size: 1.4em;
+}
+.quote .quote1 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.quote p {
+  display: block;
+  font-size: 1.3em;
+  padding: 40px 0;
+  color:  #2f2f2fd4;
+ 
+
+}
+.section-titles.divider:after {
+  content: "";
+  border-bottom: 3px solid #74642F;
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+  left: 0;
+  width: 50px;
+}
+  .section-header .title span {
+    font-size: 14px;
+    color: #afafaf;
+    text-transform: uppercase;
+}
+.section-title {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 75px;
+  position: relative;
+}
+.section-header .section-title:before, .section-header .section-title:after {
+  content: "";
+  border-bottom: 1px solid #E0E0E0;
+  position: absolute;
+  top: 30px;
+  width: 25%;
+  align-items: center;
+}
+.section-header .section-title:after {
+  right: 3px;
+}
+.section-header .section-title:before {
+  left: 3px;
+}
+
+.best-book .section-header {
+  background: #EDEBE4;
+  padding: 140px 0 190px;
+  margin-bottom: -141px;
+  z-index: -1;
+}
+.best-book-list{
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.best-book-list .book-img {
+  background: #EFEEE8;
+  border: 1px solid #EAE8DF;
+  padding: 8%;
+  cursor: pointer;
+  width: 250px;
+}
+.book-img{
+  width: 150px;
+}
+.best-book-list li:hover .book-img{
+  opacity: 0.7;
+  
+}
+
+.best-book-list h3{
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #261e0085;
+  margin: 0;
+  font-family: "Prata", Georgia, serif;
+ 
+}
+.best-book-list li{
+  margin: 0 40px;
+}
+
+.best-book-list p{
+  color:  #757575;
+  margin-bottom: 20px;
+}
+
+.best-book-list .book-link{
+  text-decoration: none;
+  color: #74642F;
+  font-size: 1.2em;
+  position: relative;
+  cursor: pointer;
+}
+
+.best-book-list .book-link img{
+  width: 20px;
+  position: absolute;
+  top: 4px;
+}
+.best-book-list::-webkit-scrollbar{
+  width: 6px;
+  height: 14px;
+}
+
+.best-book-list::-webkit-scrollbar-thumb{
+  background-color: #e0dcce8a ;
+  border-radius: 20px;
+}
+
+footer > .conteiner {
+  padding: 92px 80px 0 80px;
+}
+footer{
+  background-color: #EDEBE4;
+  width: 100%;
+    height: 100%;
+    color: #74642F;
+    padding-bottom: 5%;
+    font-size: 20px;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+}
+.first {
+  margin-top: 36px;
+  flex-direction: column;
+}
+.contact {
+  margin-top: 20px;
+  flex-direction: column;
+}
+footer .media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 42px;
+
+}
+
+footer a{
+  text-decoration: none;
+  color: #777;
+}
+/* footer ul{
+  margin-right: 20%;
+} */
+footer li{
+  margin-bottom: 8px;
+}
+footer  a:hover{
+  color:#74642F ;
+}
+
+.author {
+font-size: 17px;
+}
+.anim{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.8s linear forwards;
+}
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1023px){
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.section-header .section-title:before, .section-header .section-title:after {
+  width: 15%;
+}
+}
+
+
+
+@media screen and (max-width: 767px ){
+.container{
+  width: 100%;
+}
+#clock #time div span {
+  width: 20vw;
+}
+#clock h2 {
+  font-size: 0.7em;
+}
+.nav li a {
+  font-size: 13px;
+}
+.divider{
+  font-size: 2em;
+}
+
+/* saatis nawili ver gadavawyve */
+.section-title{
+  font-size: 1.6rem;
+}
+.section-header .section-title:before, .section-header .section-title:after {
+  top: 60px;
+  width: 100%;
+}
+.menu-list a {
+  padding: 0 10px;
+}
+.logo img{
+  width: 30vw;
+}
+footer> .conteiner {
+  padding: 65px 0 0 39px;
+}
+footer ul {
+  padding: 0;
+  width: 100%;
+}
+footer .footer {
+  flex-direction: column;
+}
+footer {
+  text-align: start;
+}
+.author {
+  font-size: 17px;
+  margin-top: 25px;
+}
+.menu-list span{
+  display: none;
+}
+}
