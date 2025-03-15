@@ -54,7 +54,39 @@ ul{
 li{
     list-style: none;
 }
+.box{
+  height: 20px;
+  margin: auto;
+  position: relative;
+  width: 22px;
+  display: none;
+}
+@media screen and (max-width: 767px ){
+   .box{
 
+     display: block;
+       margin: 0;
+   }
+   nav{
+    display: none;
+   }
+}
+.span-one, .span-two, .span-three{
+        background-color: rgb(0 0 0);
+        border-radius: 2px;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+    .span-two{
+        top: 0;
+        margin: auto;
+    }
+  .span-two, .span-three{
+    bottom: 0;
+   
+}
 .menu-list li a:hover{
     color: rgba(169, 111, 2, 0.685);
 }
